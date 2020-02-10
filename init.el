@@ -7,6 +7,7 @@
 
 (require 'olivetti)
 (require 'fountain-mode)
+(require 'org-bullets)
 (require 'zenburn-theme)
 (package-initialize)
 
@@ -17,6 +18,7 @@
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'text-mode-hook 'cfg-disable-linum)
 (add-hook 'org-mode-hook 'outline-minor-mode)
+(add-hook 'org-mode-hook 'org-bullets-mode)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
