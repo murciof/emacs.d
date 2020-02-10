@@ -1,0 +1,9 @@
+ 
+/auto-save-list/
+/elpa/
+
+/.directory
+/history
+
+*~
+\#*
