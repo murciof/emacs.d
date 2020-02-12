@@ -1,4 +1,4 @@
-;; On Debian/Ubuntu: run 'sudo apt install elpa-olivetti elpa-fountain-mode elpa-org-bullets elpa-zenburn-theme elpa-markdown-mode'
+;; On Debian/Ubuntu: run 'sudo apt install elpa-olivetti elpa-fountain-mode elpa-org-bullets elpa-zenburn-theme elpa-markdown-mode pandoc markdown'
 
 (setq ispell-dictionary "eo")
 (setq flyspell-default-dictionary "eo")
@@ -6,6 +6,7 @@
 (setq make-backup-files nil)
 (setq inhibit-startup-screen t)
 (setq olivetti-body-width 90)
+(setq markdown-command "pandoc -f markdown -t html")
 
 (require 'olivetti)
 (require 'fountain-mode)
