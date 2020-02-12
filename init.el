@@ -1,3 +1,5 @@
+;; On Debian/Ubuntu: run 'sudo apt install elpa-olivetti elpa-fountain-mode elpa-org-bullets elpa-zenburn-theme elpa-markdown-mode'
+
 (setq ispell-dictionary "eo")
 (setq flyspell-default-dictionary "eo")
 (setq create-lockfiles nil)
@@ -9,6 +11,7 @@
 (require 'fountain-mode)
 (require 'org-bullets)
 (require 'zenburn-theme)
+(require 'markdown-mode)
 (package-initialize)
 
 (defun cfg-disable-linum ()
