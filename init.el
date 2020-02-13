@@ -1,4 +1,4 @@
-;; On Debian/Ubuntu: run 'sudo apt install elpa-olivetti elpa-fountain-mode elpa-org-bullets elpa-zenburn-theme elpa-markdown-mode pandoc markdown'
+;; On Debian/Ubuntu: run 'sudo apt install elpa-olivetti elpa-fountain-mode elpa-org-bullets elpa-zenburn-theme elpa-markdown-mode elpa-company pandoc markdown'
 
 (setq ispell-dictionary "eo")
 (setq flyspell-default-dictionary "eo")
@@ -13,11 +13,14 @@
 (require 'org-bullets)
 (require 'zenburn-theme)
 (require 'markdown-mode)
+(require 'company)
+
 (package-initialize)
 
 (defun cfg-disable-linum ()
   (display-line-numbers-mode -1))
 
+(add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'text-mode-hook 'olivetti-mode)
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'text-mode-hook 'cfg-disable-linum)
