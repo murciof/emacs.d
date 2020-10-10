@@ -30,7 +30,9 @@
 (defun activate-writing-mode ()
   (variable-pitch-mode 1)
   ;;(global-hl-line-mode 0)
-  (setq line-spacing 2))
+  (setq line-spacing 2)
+  (setq left-fringe-width 0)
+  (setq right-fringe-width 0))
 
 (add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'text-mode-hook 'olivetti-mode)
