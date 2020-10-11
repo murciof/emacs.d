@@ -59,6 +59,17 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 105 :width normal :family "Iosevka Slab"))))
+ '(org-level-1 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-2 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-3 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-4 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-5 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-6 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-7 ((t (:inherit default :weight bold :height 140))))
+ '(org-level-8 ((t (:inherit default :weight bold :height 140))))
+ '(org-table ((t (:inherit default :height 105 :family "Iosevka Slab"))))
+ '(org-block ((t (:inherit default :height 105 :family "Iosevka Slab"))))
+ '(org-code ((t (:inherit default :height 105 :family "Iosevka Slab"))))
  '(variable-pitch ((t (:height 125 :family "Liberation Serif")))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
